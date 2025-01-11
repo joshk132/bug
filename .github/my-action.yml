@@ -1,5 +1,7 @@
 name: Run tsx server
 
+on: [workflow_dispatch]
+
 jobs:
   run-tsx-server:
     runs-on: ubuntu-latest
