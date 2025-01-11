@@ -18,3 +18,15 @@ jobs:
       - name: Run tsx server
         run: |
           timeout 15s tsx server.ts
+  run-node-server:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run node server
+        run: |
+          timeout 15s node server.js
